@@ -9,6 +9,15 @@ body {
 		margin: 0;
 	}
 
+	h2 {
+		background-color: #222;
+		padding: .5rem;
+	}
+
+	.data {
+		color: rgb(227, 191, 150);
+	}
+
 	animation: fadein .2s ease-in;
 }
 
