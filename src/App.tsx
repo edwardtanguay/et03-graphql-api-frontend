@@ -14,6 +14,7 @@ interface IEmployee {
 const QUERY = gql`
 	{
 		message
+		departments
 	}
 `;
 
@@ -31,7 +32,12 @@ function App() {
 		<div className="App">
 			<h1>GraphQL and REST Demo</h1>
 			<h2>Data from GraphQL API</h2>
-			{!loading && <p>{data.message}</p>}
+			{!loading && (
+				<div>
+					<div>Message: <span className="data">{data.message}</span></div>
+					<div>Departments: <span className="data">{data.departments.join(', ')}</span></div>
+				</div>
+			)}
 			<h2>Data from REST API</h2>
 			<h3>There are {employees.length} employees</h3>
 			<ul>
