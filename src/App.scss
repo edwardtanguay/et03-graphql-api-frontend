@@ -1,0 +1,23 @@
+body {
+	background-color: #444;
+	color: #ccc;
+	font-family: sans-serif;
+	padding: 1rem;
+
+	h1 {
+		font-size: 1.7rem;
+		margin: 0;
+	}
+
+	animation: fadein .2s ease-in;
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
